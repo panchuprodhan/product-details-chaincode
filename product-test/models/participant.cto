@@ -1,0 +1,14 @@
+namespace participant
+
+participant Admin identified by participantId {
+  o String participantId
+  o String firstName
+  o String lastName
+}
+
+participant User identified by participantId {
+  o String participantId
+  o String firstName
+  o String lastName
+}
+

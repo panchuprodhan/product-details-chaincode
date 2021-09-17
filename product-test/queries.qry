@@ -1,0 +1,30 @@
+/**
+ * All named queries in this file
+ **/
+
+ // Returns all products 
+ query AllProducts {
+   description: "Returns all flights in the registry"
+   statement:  
+      SELECT  product.Product
+ }
+
+ query ProductByType {
+   description: "Returns all flights in the registry"
+   statement:  
+      SELECT  product.Product
+  	  WHERE   (productType == _$product_type)
+  } 
+
+  query ProductByPrice {
+   description: "Returns all flights in the registry"
+   statement:  
+      SELECT  product.Product
+  	  WHERE   (productPrice  == _$product_price )
+  }
+
+  query AllUsers {
+  description: "Returns all aircrafts in the registry"
+  statement:  
+    SELECT  product.User
+}
